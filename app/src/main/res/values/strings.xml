@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ivote</string>
+    <string name="text_of_award1">1 سال تاتر رایگان</string>
+    <string name="text_of_award_for3person">برای سه نفر</string>
+    <string name="text_of_award3">1 سال تفریح رایگان</string>
+    <string name="text_of_award2">یکسال سینما رایگان</string>
+    <string name="text_of_campaign">پویش مردمی انتخاب بهترین های سینما</string>
+</resources>

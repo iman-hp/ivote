@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <com.ramotion.foldingcell.FoldingCell
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/folding_cell"
+        folding-cell:animationDuration="1000"
+        folding-cell:backSideColor="#000000"
+
+        folding-cell:cameraHeight="30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        ​
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:background="#232323"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/imagetitlee"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/titlee"/>
+            <LinearLayout
+                android:padding="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#978f19"
+                    android:layout_marginRight="30dp"
+                    android:text="نام فیلم "/>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="هزار پا"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:background="#8c8989"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:padding="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کارگردان"
+                        android:textColor="#978f19"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/txt_director"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:text="ابوالحسن فتحی"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:padding="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#978f19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زمان فیلم"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:text="120 m"
+                        />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:background="#8c8989"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="6dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#978f19"
+                    android:text="سینما های در حال اکران"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/txt_cinema"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="ماندانا ، کوروش، آزادی، ملت "
+                    android:layout_marginBottom="8dp"/>
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="#8c8989"
+                    android:layout_height="1dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_green"
+                    android:text="پسندیدم"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        ​
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imagetitle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/titlee"/>
+        </FrameLayout>
+        ​
+    </com.ramotion.foldingcell.FoldingCell>
+        ​
+
+</LinearLayout>
